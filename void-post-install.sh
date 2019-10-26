@@ -24,10 +24,10 @@ mkdir $HOME/dokumenti
 mkdir $HOME/šola
 
 git clone https://github.com/ckbr0/dwm.git $TMPDIR/dwm
-make -C $TMPDIR/dwm install
+sudo make -C $TMPDIR/dwm install
 
 git clone https://github.com/ckbr0/st.git $TMPDIR/st
-make -C $TMPDIR/st install
+sudo make -C $TMPDIR/st install
 
 # Dotfiles
 git clone https://github.com/ckbr0/linuxrice.git $TMPDIR/dotfiles
@@ -38,7 +38,5 @@ cp -rf $TMPDIR/dotfiles/. $HOME/
 mkdir $HOME/slike/ozadja
 git clone https://github.com/ckbr0/ozadja.git $HOME/slike/ozadja
 sudo rm -rf $HOME/slike/ozadja/.git
-
-./$HOME/.local/bin/updatewal $HOME/slike/ozadja
 
 sudo rm -r $TMPDIR
