@@ -23,6 +23,12 @@ mkdir $HOME/glasba
 mkdir $HOME/dokumenti
 mkdir $HOME/šola
 
+git clone https://github.com/ckbr0/dwm.git $TMPDIR/dwm
+make -C $TMPDIR/dwm install
+
+git clone https://github.com/ckbr0/st.git $TMPDIR/st
+make -C $TMPDIR/st install
+
 # Dotfiles
 git clone https://github.com/ckbr0/linuxrice.git $TMPDIR/dotfiles
 sudo rm -r $TMPDIR/dotfiles/.git
